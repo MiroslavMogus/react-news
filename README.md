@@ -11,8 +11,11 @@ If you click on news title you can get detail page with news text.
 
 To run application setup your React Native Android enviroment, download zip from github and simply run it with:
 
-cd <project>
+cd react-news-master
+
 react-native start
+
 react-native run-android
+
 
 enjoy ;-)
