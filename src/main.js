@@ -45,18 +45,17 @@ render() {
 		return <Item key={key} keyval={key} val={val} />
 	});
 
-	return (
-		         
-		<View style={styles.container} >
-		<View style={styles.header} >
-			<Text style={styles.headerText} >
-				NEWS
-			</Text>
-    </View>
-		<View style={styles.containerTwo} >
-      <ScrollView>
+	return (	         
+	<View style={styles.container} >
+	<View style={styles.header} >
+	<Text style={styles.headerText} >
+		NEWS
+	</Text>
+    	</View>
+	<View style={styles.containerTwo} >
+      	<ScrollView>
       	{newsItems}
-      <MyActivityIndicator
+      	<MyActivityIndicator
             animating = {this.state.animating}
             style={[styles.centering, {height: 80}]}
             size="large"
@@ -71,24 +70,24 @@ render() {
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
+	  flex: 1,
 	},
 	containerTwo: {
-		flex: 2,
-    flexDirection: 'row',  	
+	  flex: 2,
+   	  flexDirection: 'row',  	
 	},
   	header: {
-    backgroundColor: '#ffffff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
-  },
+    	  backgroundColor: '#ffffff',
+          alignItems: 'center',
+          justifyContent: 'center',
+          borderBottomWidth: 1,
+          borderBottomColor: '#ddd',
+        },
 	headerText: {
-		color: 'black',
-		fontSize: 18,
-		padding: 10,
-		marginLeft: 12,
+	  color: 'black',
+	  fontSize: 18,
+	  padding: 10,
+	  marginLeft: 12,
 	}
 })
     
