@@ -40,33 +40,33 @@ module.exports = React.createClass({
 		});
 	},
 
-render() {
-	let newsItems = this.state.newsItems.map((val, key) => {
+        render() {
+	  let newsItems = this.state.newsItems.map((val, key) => {
 		return <Item key={key} keyval={key} val={val} />
-	});
+	  });
 
-	return (	         
-	<View style={styles.container} >
-	<View style={styles.header} >
-	<Text style={styles.headerText} >
+	  return (	         
+	  <View style={styles.container} >
+	  <View style={styles.header} >
+	  <Text style={styles.headerText} >
 		NEWS
-	</Text>
-    	</View>
-	<View style={styles.containerTwo} >
-      	<ScrollView>
-      	{newsItems}
-      	<MyActivityIndicator
+	  </Text>
+    	  </View>
+	  <View style={styles.containerTwo} >
+      	  <ScrollView>
+      	  {newsItems}
+      	  <MyActivityIndicator
             animating = {this.state.animating}
             style={[styles.centering, {height: 80}]}
             size="large"
             text="Loading"
-       />
-      </ScrollView>
+          />
+          </ScrollView>
 		</View>
 		</View>
 		)
-	}
-})
+	  }
+        })
 
 const styles = StyleSheet.create({
 	container: {
